@@ -1,0 +1,44 @@
+{
+  "author": "Vex untuk Junan",
+  "bin": {
+    "kapanlibur": "bin/kapanlibur.js"
+  },
+  "description": "CLI & library \"kapan libur?\" — cek tanggal merah Indonesia, pemburu libur kejepit (long weekend), dan optimizer cuti. Data SKB 3 Menteri, zero dependency.",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/junanda24/daily-kapanlibur#readme",
+  "keywords": [
+    "libur",
+    "libur-nasional",
+    "cuti-bersama",
+    "indonesia",
+    "holiday",
+    "long-weekend",
+    "cli",
+    "tanggal-merah"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "kapanlibur",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junanda24/daily-kapanlibur.git"
+  },
+  "scripts": {
+    "lint": "node --check bin/kapanlibur.js && for f in src/*.js; do node --check \"$f\"; done && echo OK",
+    "test": "node --test test/*.test.js"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
